@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Egz.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Egz"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="Text_zametca" HorizontalAlignment="Left" Margin="51,193,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="229" Width="595" PlaceholderText="Текст"/>
+        <Button x:Name="dobav" Content="Добавить" Margin="44,41,0,0" VerticalAlignment="Top" Click="dobav_Click"/>
+        <Button Content="Сохранить изменения" Margin="172,41,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Delit" Content="Удалить" Margin="65,433,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.866,0.567" Click="Delit_Click"/>
+        <TextBox x:Name="NameFile" HorizontalAlignment="Left" Margin="38,115,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" PlaceholderText="Введите имя"/>
+        <ListBox x:Name="Item_zametca" Margin="44,481,1196,221" Background="#FF7A7777"/>
+        <ListBox x:Name="Item_vivod_text" Margin="303,93,933,604" SelectionChanged="Item_vivod_text_SelectionChanged" Background="#FF7A7777"/>
+
+    </Grid>
+</Page>
